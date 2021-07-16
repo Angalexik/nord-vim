@@ -718,6 +718,7 @@ hi! link pandocUListItemBullet Operator
 " tree-sitter
 " > nvim-treesitter/nvim-treesitter
 if has("nvim")
+  call s:hi("TSProperty", s:nord7_gui, "", s:nord7_term, "", "NONE", "")
   hi! link TSAnnotation Annotation
   hi! link TSConstBuiltin Constant
   hi! link TSConstructor Function
@@ -725,6 +726,7 @@ if has("nvim")
   hi! link TSError Error
   hi! link TSFuncBuiltin Function
   hi! link TSFuncMacro Function
+  hi! link TSKeywordReturn Statement
   hi! link TSStringRegex SpecialChar
   hi! link TSStrong Bold
   hi! link TSStructure Structure
