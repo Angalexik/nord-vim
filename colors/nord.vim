@@ -563,6 +563,25 @@ call s:hi("ALEErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
 call s:hi("ALEWarning" , s:nord13_gui, "", s:nord13_term, "", "undercurl", "")
 call s:hi("ALEError" , s:nord11_gui, "", s:nord11_term, "", "undercurl", "")
 
+" Barbar
+" > romgrk/barbar.nvim
+call s:hi("BufferTabpageFill", s:nord4_gui, s:nord0_gui, "NONE", "NONE", "", "")
+call s:hi("BufferCurrent", s:nord4_gui, s:nord3_gui, "NONE", s:nord3_term, "", "")
+call s:hi("BufferCurrentMod", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "", "")
+call s:hi("BufferCurrentTarget", s:nord11_gui, s:nord3_gui, s:nord11_term, s:nord3_term, "", "")
+call s:hi("BufferInactive", s:nord3_gui_bright, s:nord0_gui, s:nord3_term, "NONE", "", "")
+call s:hi("BufferInactiveMod", s:nord8_gui, s:nord0_gui, s:nord8_term, "NONE", "", "")
+call s:hi("BufferInactiveTarget", s:nord11_gui, s:nord0_gui, s:nord11_term, "NONE", "", "")
+hi! link BufferCurrentIndex BufferCurrent
+hi! link BufferCurrentSign BufferCurrent
+hi! link BufferVisible BufferCurrent
+hi! link BufferVisibleMod BufferCurrentMod
+hi! link BufferVisibleIndex BufferCurrentIndex
+hi! link BufferVisibleSign BufferCurrentSign
+hi! link BufferVisibleTarget BufferCurrentTarget
+hi! link BufferInactiveIndex BufferInactive
+hi! link BufferInactiveSign BufferInactive
+
 " Coc
 " > neoclide/coc
 call s:hi("CocWarningHighlight" , s:nord13_gui, "", s:nord13_term, "", "undercurl", "")
